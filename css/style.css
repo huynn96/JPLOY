@@ -2,11 +2,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial;
+    font-size: 0.9rem;
+}
+
+.font-bold {
+    font-weight: 600;
+    font-size: 0.7rem;
 }
 
 .headerImage {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     width: 100%;
     height: 500px;
     top: 0;
@@ -18,29 +24,33 @@ body {
 
 .content {
     padding: 20px;
-    margin-top: 132px;
-    background: #f4f3f3;
+    margin-top: 50px;
 }
 
 .iconImg {
-    height: 25px;
+    height: 40px;
     margin: 10px;
 }
 
 .teamLeadDescribe {
     position: absolute;
-    right: 310px;
+    background-color: #fff;
+    left: 19%;
     top: 670px;
     z-index: +1;
-    width: 400px;
+    width: 35%;
     padding: 1rem;
-    color: #ffffff;
-    border: solid 1px #d7d7d7;
+    color: #000000;
     border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #e8e3df;
+    -moz-box-shadow: 1px 1px 2px 2px #e8e3df;
+    -webkit-box-shadow: 1px 1px 2px 2px #e8e3df;
+    -o-box-shadow: 1px 1px 2px 2px #e8e3df;
+    -ms-box-shadow: 1px 1px 2px 2px #e8e3df;
 }
 
-.marginTop180px {
-    margin-top: 180px;
+.content-text {
+    color: #5a5a5a;
 }
 
 .marginTop50px {
@@ -54,12 +64,38 @@ body {
 .greenUnderline {
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: #1e7e34;
+    text-decoration-color: #00a76b;
 }
 
 .ourTeamImg {
-    margin-top: 30px;
-    width: 660px;
+    width: 100%;
+    margin-top: 80px;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    -moz-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    -o-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    -ms-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.team-gradient3 {
+    position: absolute;
+    right: 10%;
+    bottom: -10px;
+    z-index: -1;
+}
+
+.ourTeam {
+    position: absolute;
+    margin-left: 10%;
+}
+
+.gradient-team {
+    position: absolute;
+    z-index: 1;
+}
+
+.team-text {
+    z-index: 2;
 }
 
 .emailInput .form-control {
@@ -73,9 +109,32 @@ body {
     border-bottom-right-radius: 20px;
 }
 
+.nav-link-active {
+    text-decoration: underline;
+}
+
+.gradient-header {
+    position: absolute;
+    z-index: -1;
+}
+
+.gradient-team-lead {
+    position: absolute;
+    z-index: -1;
+    margin-top: 250px;
+}
+
+.header-text {
+    font-weight: 300;
+}
+
+.footer-text {
+    color: #777;
+}
+
 /* Customize container */
-@media (min-width: 48em) {
+@media (min-width: 65em) {
     .container {
-        max-width: 46rem;
+        max-width: 63rem;
     }
 }
